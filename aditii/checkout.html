@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Aditii</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header" id="header">
+        <section class="section top-header">
+            <div class="inner">
+                <a href="index.html"><h1 class="logo">Aditii</h1></a>
+                <div class="search-wrapper">
+                    <input type="text" placeholder="Search..." class="search">
+                </div>
+                <div class="cart-wrapper">
+                    <span class="cart">
+                        <a href="checkout.html"><img src="media/basketicon.png" class="basketicon" /></a>
+                        <button type="button" class="btn cart-btn" id="cartBtn"><span id="cartItems">0</span> item(s) - $<span id="cartSubtotal">0.00</span></button>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="section main-header">
+            <div class="inner">
+                <nav class="main-nav">
+                    <ul class="main-nav-list">
+                        <li class="main-nav-item">
+                            <a href="#link">home</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a href="#link">sale</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a href="#link">handbags</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a href="#link">wallets</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a href="#link">accessories</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a href="#link">men's store</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a href="#link">shoes</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a href="#link">vintage</a>
+                        </li>
+                        <li class="main-nav-item">
+                            <a href="#link">services</a>
+                        </li>
+                        <li class="main-nav-item" id="contact">
+                            <a href="#link">contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <!-- close header -->
+
+    <!-- main -->
+
+            <!-- catalog section -->
+            <section class="section catalog-section" id="catalogSection">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="catalog-header">Catalog</h2>
+                            <p class="catalog-slogan">Shop Until You Drop!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="prod-div">
+                                <div class="item-div row" id="itemDiv">
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- close catalog section -->
+
+        <!-- checkout section -->
+        <section class="section checkout-page d-none" id="checkoutPage">
+            <div class="bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <p class="bar-text"><span class="home-switch">Home</span> &gt; Checkout</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="section checkout-section">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="checkout-header">checkout</h2>
+                            <p class="checkout-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, quam?</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="checkout-item-count">
+                                <span id="checkoutItemCount"></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+
+                            <table class="table" id="table">
+                                <tr class="table-headers">
+                                    <td>item</td>
+                                    <td>price</td>
+                                    <td>quantity</td>
+                                    <td>subtotal</td>
+                                </tr>
+
+                                <tbody id='tbody'></tbody>
+                                <!-- load items -->
+                                <tr class="totals" id="totals">
+                                    <td colspan="4">
+                                        <p class="total-subtotal" id="totalSubtotal">Subtotal:</p>
+                                        <p class="total-tax" id="totalTax">Tax:</p>
+                                        <p class="delivery-fee" id="deliveryFee">Delivery Fee:</p>
+                                        <p class="total-total" id="totalTotal">Total:</p>
+                                    </td>
+                                    <td class="total-values" id="totalValues">
+                                        <p class="subtotal-value" id="subtotalValue">0.00</p>
+                                        <p class="tax-value" id="taxValue">0.00</p>
+                                        <p class="delivery-fee-value" id="deliveryValue">4.99</p>
+                                        <p class="total-value">$<span id="totalValue"></span></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn confirm-button" id="confirmButton">confirm order</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- close checkout page-->
+
+    <!-- close main -->
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <section class="section main-footer">
+            <div class="inner">
+                <div class="footer-div featured-sale">
+                    <h2 class="sub-header">featured-sale</h2>
+                    <ul class="featured-list">
+                        <li class="featured-list-item"><a href="#link">Alexis Hudson</a></li>
+                        <li class="featured-list-item"><a href="#link">American Apparel</a></li>
+                        <li class="featured-list-item"><a href="#link">Ben Sherman</a></li>
+                        <li class="featured-list-item"><a href="#link">Big Buddha</a></li>
+                        <li class="featured-list-item"><a href="#link">Chanel</a></li>
+                        <li class="featured-list-item"><a href="#link">Christian Audigier</a></li>
+                        <li class="featured-list-item"><a href="#link">Coach</a></li>
+                        <li class="featured-list-item"><a href="#link">Cole Haan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-div mens-store">
+                    <h2 class="sub-header">mens store</h2>
+                    <ul class="mens-list">
+                        <li class="mens-list-item"><a href="#link">Alexis Hudson</a></li>
+                        <li class="mens-list-item"><a href="#link">American Apparel</a></li>
+                        <li class="mens-list-item"><a href="#link">Ben Sherman</a></li>
+                        <li class="mens-list-item"><a href="#link">Big Buddha</a></li>
+                        <li class="mens-list-item"><a href="#link">Chanel</a></li>
+                        <li class="mens-list-item"><a href="#link">Christian Audigier</a></li>
+                        <li class="mens-list-item"><a href="#link">Coach</a></li>
+                        <li class="mens-list-item"><a href="#link">Cole Haan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-div women-store">
+                    <h2 class="sub-header">women store</h2>
+                    <ul class="women-list">
+                        <li class="women-list-item"><a href="#link">Alexis Hudson</a></li>
+                        <li class="women-list-item"><a href="#link">American Apparel</a></li>
+                        <li class="women-list-item"><a href="#link">Ben Sherman</a></li>
+                        <li class="women-list-item"><a href="#link">Big Buddha</a></li>
+                        <li class="women-list-item"><a href="#link">Chanel</a></li>
+                        <li class="women-list-item"><a href="#link">Christian Audigier</a></li>
+                        <li class="women-list-item"><a href="#link">Coach</a></li>
+                        <li class="women-list-item"><a href="#link">Cole Haan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-div quick-links">
+                    <h2 class="sub-header">quick links</h2>
+                    <ul class="quick-link-list">
+                        <li class="quick-link-list-item"><a href="#link">Alexis Hudson</a></li>
+                        <li class="quick-link-list-item"><a href="#link">American Apparel</a></li>
+                        <li class="quick-link-list-item"><a href="#link">Ben Sherman</a></li>
+                        <li class="quick-link-list-item"><a href="#link">Big Buddha</a></li>
+                        <li class="quick-link-list-item"><a href="#link">Chanel</a></li>
+                        <li class="quick-link-list-item"><a href="#link">Christian Audigier</a></li>
+                        <li class="quick-link-list-item"><a href="#link">Coach</a></li>
+                        <li class="quick-link-list-item"><a href="#link">Cole Haan</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section colophon">
+            <div class="inner">
+                <p class="colophon-text">Copyright &copy; 2013 Css Author</p>
+            </div>
+        </section>
+    </footer>
+    <!-- close footer -->
+    <script src="app.js"></script>
+</body>
+
+</html>

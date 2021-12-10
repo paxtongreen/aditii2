@@ -1,0 +1,417 @@
+*{box-sizing: border-box;}
+
+:root{
+    --navBGcolor:#41d1c2;
+    --mainBGcolor: #3cc3b5;
+    --buttonBGcolor: #44bc93;
+    --colophonBGcolor: #2ca699;
+}
+
+/* generic */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.inner {
+    margin: 0 auto;
+    width: 80%;
+    /* border: 1px solid red; */
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-shadow: 2px 2px 10px white;
+}
+
+.button{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: white;
+    background: var(--buttonBGcolor);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.button:hover{
+    background: var(--mainBGcolor);
+}
+
+.block{
+    font-family: sans-serif;
+}
+.confirm-button{
+    color: #41d1c2;
+    border: 2px solid #41d1c2;
+    margin-bottom: 20px;
+}
+.confirm-button:hover{
+    color: white;
+    background: #41d1c2;
+}
+.add-to-cart-btn{
+    color: #41d1c2;
+    border: 2px solid #41d1c2;
+}
+.add-to-cart-btn:hover{
+    color: white;
+    background: #41d1c2;
+}
+.item-caption{
+    text-transform: uppercase;
+    font-weight: 200;
+}
+.catalog-header{
+    color: #41d1c2;
+}
+.catalog-slogan{
+    font-weight: 400;
+}
+.checkout-header{
+    color: #41d1c2;
+}
+table h1{
+    color: #41d1c2;
+}
+.item-img{
+    width: 200px;
+}
+/* header */
+
+.header{
+    margin: 0;
+    /* border: 1px solid orange; */
+}
+
+.top-header{
+    padding-bottom: 20px;
+    padding-top: 15px;
+    /* border: 1px solid purple; */
+}
+
+.top-header .inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo {
+    font-family: 'Lobster', cursive;
+    color: var(--mainBGcolor);
+    font-size: 40px;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+.search{
+    width: 500px;
+    height: 30px;
+}
+
+.search-wrapper{
+    margin-top: 13px;
+}
+
+.basketicon{
+    width: 40px;
+}
+
+.cart{
+    margin-top: 5px;
+    display: flex;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: gray; 
+}
+
+.total{
+    margin-top: 8px;
+    margin-left: 6px;
+}
+
+.main-header{
+    background-color: var(--navBGcolor);
+    padding-top: 10px;
+    border: 1px solid #41d1c2;
+}
+
+.main-nav-list{
+    font-weight: 700;
+    display: flex;
+    padding: 0;
+    font-family: sans-serif;
+    justify-content: space-between;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.main-nav-item{
+    margin: 0;
+    padding-right: 15px;
+    border-right: 1px solid white;
+}
+
+#contact{
+    border-right: none;
+}
+/* close header */
+
+/* main */
+
+    /* section 1 */
+
+.section1{
+    font-family: sans-serif;
+    color: white;
+    background-color: var(--mainBGcolor);
+}
+
+.section1 .inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.block1{
+    margin-left: 70px;
+    /* border: 1px solid green; */
+}
+
+.shirt{
+    width: 350px;
+}
+
+.block2{
+    margin-right: 180px;
+    width: 378px;
+    /* border: 1px solid red; */
+}
+
+.section1 .sub-header{
+    font-size: 38px;
+    text-transform: uppercase;
+    margin-top: 70px;
+}
+
+.section1 .text{
+    margin-top: -20px;
+    line-height: 2;
+}
+
+#shop-now{
+    background: none;
+    border: 2px solid white;
+}
+
+.sliders{
+    display: flex;
+    margin-top: 50px;
+}
+
+.slider {
+    background-color: white;
+    padding: 3px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.slider:hover{
+    opacity: 0.3;
+}
+
+    /* end of section 1 */
+
+    /* section 2 */
+
+.section2 .inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2 h3 {
+    text-transform: uppercase;
+}
+
+.section2 .block{
+    display: flex;
+    color: gray;
+    margin-top: 20px;
+    width: 300px;
+    /* border: 1px solid red; */
+}
+
+.shoes{
+    width: 150px;
+}
+
+.purple-shirt{
+    width: 150px;
+}
+
+.cargos{
+    width: 150px;
+}
+
+    /* end of section 2 */
+
+    /* section 3 */
+
+.section3{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--mainBGcolor);
+    border: 1px solid #3cc3b5;
+}
+
+/* end of section 3 */
+
+/* section 4 */
+
+.section4 .block{
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    border-bottom: 4px solid var(--buttonBGcolor);
+    /* border: 1px solid red; */
+}
+
+.section4 h3{
+    text-transform: uppercase;
+    color: gray;
+}
+
+.section4 .inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-grow: revert;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* border: 1px solid orange; */
+}
+
+.white-shoe{
+    padding-top: 50px;
+    width: 180px;
+}
+
+.edgy-shirt{
+    padding-top: 18px;
+    width: 120px;
+}
+
+.dress-shoes{
+    width: 135px;
+}
+
+.vans{
+    width: 135px;
+}
+
+.birkin{
+    width: 140px;
+}
+
+.cargos2{
+    width: 132px;
+}
+
+.section4 .priceblock{
+    position: relative;
+    left: 32px;
+}
+
+.price{
+    position: absolute;
+    left: 40px;
+    top: 5px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: gray;
+    /* border: 1px solid red; */
+}
+
+    /* end of section 4 */
+
+/* close main */
+
+/* footer */
+
+.footer{
+    margin: 0;
+    /* border: 1px solid cyan; */
+}
+
+.footer .inner{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.main-footer{
+    background: var(--mainBGcolor);
+}
+
+.main-footer .inner{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    /* border: 1px solid brown; */
+}
+
+.sub-header{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.quick-link-list{
+    list-style-type: none;
+    padding-left: 1px;
+    line-height: 2;
+}
+
+.women-list{
+    list-style-type: none;
+    padding-left: 1px;
+    line-height: 2;
+}
+
+.mens-list{
+    list-style-type: none;
+    padding-left: 1px;
+    line-height: 2;
+}
+
+.featured-list{
+    list-style-type: none;
+    padding-left: 1px;
+    line-height: 2;
+}
+
+.colophon{
+    text-align: center;
+    color: white;
+    border: 1px solid #2ca699;
+}
+
+.colophon{
+    background-color: var(--colophonBGcolor);
+}
+
+/* close footer */
